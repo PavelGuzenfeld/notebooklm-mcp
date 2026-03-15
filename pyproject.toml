@@ -26,9 +26,9 @@ dependencies = [
 browser = ["notebooklm-py[browser]>=0.3.0"]
 
 [project.urls]
-Homepage = "https://github.com/PavelGuzenfeld/mcp-notebooklm"
-Repository = "https://github.com/PavelGuzenfeld/mcp-notebooklm"
-Issues = "https://github.com/PavelGuzenfeld/mcp-notebooklm/issues"
+Homepage = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
+Repository = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
+Issues = "https://github.com/PavelGuzenfeld/notebooklm-mcp/issues"
 
 [project.scripts]
 notebooklm-mcp = "notebooklm_mcp.server:main"
