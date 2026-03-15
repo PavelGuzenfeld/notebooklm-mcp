@@ -1,0 +1,39 @@
+[project]
+name = "notebooklm-mcp"
+version = "0.1.0"
+description = "MCP server for Google NotebookLM"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["mcp", "notebooklm", "google", "ai", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "notebooklm-py>=0.3.0",
+]
+
+[project.optional-dependencies]
+browser = ["notebooklm-py[browser]>=0.3.0"]
+
+[project.urls]
+Homepage = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
+Repository = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
+Issues = "https://github.com/PavelGuzenfeld/notebooklm-mcp/issues"
+
+[project.scripts]
+notebooklm-mcp = "notebooklm_mcp.server:main"
+notebooklm-auth = "notebooklm_mcp.auth_cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
