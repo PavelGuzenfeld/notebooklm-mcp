@@ -29,6 +29,7 @@ browser = ["notebooklm-py[browser]>=0.3.0"]
 Homepage = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
 Repository = "https://github.com/PavelGuzenfeld/notebooklm-mcp"
 Issues = "https://github.com/PavelGuzenfeld/notebooklm-mcp/issues"
+Author = "https://pavelguzenfeld.com"
 
 [project.scripts]
 notebooklm-mcp = "notebooklm_mcp.server:main"
