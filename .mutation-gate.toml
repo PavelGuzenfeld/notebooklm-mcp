@@ -1,0 +1,16 @@
+# This repo is opted out of the diff-scoped mutation gate. See issue #1.
+#
+# Not a judgement about the code — there is nothing here for a mutation score to
+# measure. Neither file at the root is a pytest test: test_auth_parsing.py runs
+# its assertions at module level with no test function, so pytest collects zero
+# items from it, and test_mcp.py is an end-to-end script that spawns the server
+# over stdio and needs a live NotebookLM session. pytest cannot even import it
+# without the mcp dependency installed.
+#
+# A gate with no covering tests blocks every commit and teaches nothing. Opting
+# out says so out loud: the alternative is a repo that looks gated and is not.
+#
+# Reverse this by writing a real suite — the parsing helpers in auth_cli.py
+# (parse_input, validate_cookies, cookies_to_storage_state) are pure functions
+# and the obvious place to start.
+enabled = false
